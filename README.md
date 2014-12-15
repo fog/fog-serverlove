@@ -1,5 +1,7 @@
 # Fog::Serverlove
 
+![Gem Version](https://badge.fury.io/rb/fog-serverlove.svg) [![Build Status](https://travis-ci.org/fog/fog-serverlove.svg?branch=master)](https://travis-ci.org/fog/fog-serverlove) [![Dependency Status](https://gemnasium.com/fog/fog-serverlove.svg)](https://gemnasium.com/fog/fog-serverlove) [![Coverage Status](https://img.shields.io/coveralls/fog/fog-serverlove.svg)](https://coveralls.io/r/fog/fog-serverlove?branch=master) [![Code Climate](https://codeclimate.com/github/fog/fog-serverlove.png)](https://codeclimate.com/github/fog/fog-serverlove)
+
 Module for the 'fog' gem to support ServerLove
 
 ## Help Needed
