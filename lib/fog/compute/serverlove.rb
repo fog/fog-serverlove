@@ -54,7 +54,7 @@ module Fog
           @api_key = options[:serverlove_api_key] || Fog.credentials[:serverlove_api_key]
           @api_host = options[:serverlove_api_url] || Fog.credentials[:serverlove_api_url] || API_HOST
 
-          @connection = Fog::XML::Connection.new("https://#{@api_uuid}:#{@api_key}@#{@api_host}")
+          @connection = Fog::Core::Connection.new("https://#{@api_uuid}:#{@api_key}@#{@api_host}")
         end
 
         def request(params)
