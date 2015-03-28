@@ -1,24 +1,24 @@
 module Fog
   module Compute
     class Serverlove < Fog::Service
-      autoload :Image, 'fog/compute/serverlove/models/image'
-      autoload :Images, 'fog/compute/serverlove/models/images'
-      autoload :Server, 'fog/compute/serverlove/models/server'
-      autoload :Servers, 'fog/compute/serverlove/models/servers'
-      autoload :PasswordGenerator, 'fog/compute/serverlove/password_generator'
+      autoload :Image, File.expand_path("../serverlove/models/image", __FILE__)
+      autoload :Images, File.expand_path("../serverlove/models/images", __FILE__)
+      autoload :Server, File.expand_path("../serverlove/models/server", __FILE__)
+      autoload :Servers, File.expand_path("../serverlove/models/servers", __FILE__)
+      autoload :PasswordGenerator, File.expand_path("../serverlove/password_generator", __FILE__)
 
       API_HOST = "api.z1-man.serverlove.com"
 
       requires :serverlove_uuid, :serverlove_api_key
       recognizes :serverlove_api_url
 
-      model_path 'fog/compute/serverlove/models'
+      model_path "fog/compute/serverlove/models"
       model       :image
       collection  :images
       model       :server
       collection  :servers
 
-      request_path 'fog/compute/serverlove/requests'
+      request_path "fog/compute/serverlove/requests"
       # Image
       request :get_image
       request :get_images
@@ -86,7 +86,7 @@ module Fog
         def raise_if_error!(response)
           case response.status
           when 400 then
-            raise 'omg'
+            raise "omg"
           end
         end
       end

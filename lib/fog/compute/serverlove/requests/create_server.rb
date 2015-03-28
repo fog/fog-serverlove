@@ -14,11 +14,11 @@ module Fog
           response.status = 200
 
           data = {
-            'server'       => Fog::Mock.random_numbers(1000000).to_s,
-            'name'         => options['name'] || 'Test',
-            'cpu'          => options['cpu'] || 1000,
-            'persistent'   => options['persistent'] || false,
-            'vnc:password' => options['vnc:password'] || 'T35tServER!'
+            "server"       => Fog::Mock.random_numbers(1000000).to_s,
+            "name"         => options["name"] || "Test",
+            "cpu"          => options["cpu"] || 1000,
+            "persistent"   => options["persistent"] || false,
+            "vnc:password" => options["vnc:password"] || "T35tServER!"
           }
 
           response.body = data
