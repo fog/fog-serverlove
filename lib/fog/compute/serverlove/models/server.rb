@@ -2,25 +2,25 @@ module Fog
   module Compute
     class Serverlove
       class Server < Fog::Model
-        identity :id, :aliases => 'server'
+        identity :id, :aliases => "server"
 
         attribute :name
         attribute :cpu
         attribute :mem
         attribute :smp
-        attribute :ide_0_0, :aliases => 'ide:0:0'
-        attribute :ide_0_1, :aliases => 'ide:0:1'
-        attribute :ide_1_0, :aliases => 'ide:1:0'
-        attribute :ide_1_1, :aliases => 'ide:1:1'
+        attribute :ide_0_0, :aliases => "ide:0:0"
+        attribute :ide_0_1, :aliases => "ide:0:1"
+        attribute :ide_1_0, :aliases => "ide:1:0"
+        attribute :ide_1_1, :aliases => "ide:1:1"
         attribute :boot
         attribute :persistent
         attribute :vnc
-        attribute :vnc_password, :aliases => 'vnc:password'
+        attribute :vnc_password, :aliases => "vnc:password"
         attribute :status
         attribute :user
         attribute :started
-        attribute :nic_0_model, :aliases => 'nic:0:model'
-        attribute :nic_0_dhcp,  :aliases => 'nic:0:dhcp'
+        attribute :nic_0_model, :aliases => "nic:0:model"
+        attribute :nic_0_dhcp,  :aliases => "nic:0:dhcp"
 
         def save
           attributes = {}
@@ -56,9 +56,9 @@ module Fog
         def self.defaults
           # TODO: Document default settings.
           # Note that VNC password standards are strict (need explaining)
-          { 'nic:0:model' => 'e1000', 'nic:0:dhcp' => 'auto',
-            'smp' => 'auto', 'vnc' => 'auto',
-            'vnc:password' => Fog::Compute::Serverlove::PasswordGenerator.generate
+          { "nic:0:model" => "e1000", "nic:0:dhcp" => "auto",
+            "smp" => "auto", "vnc" => "auto",
+            "vnc:password" => Fog::Compute::Serverlove::PasswordGenerator.generate
           }
         end
       end

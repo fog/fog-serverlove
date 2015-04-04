@@ -2,7 +2,7 @@ module Fog
   module Compute
     class Serverlove
       class Image < Fog::Model
-        identity :id, :aliases => 'drive'
+        identity :id, :aliases => "drive"
 
         attribute :name
         attribute :user
@@ -10,7 +10,7 @@ module Fog
         attribute :claimed
         attribute :status
         attribute :imaging
-        attribute :encryption_cipher, :aliases => 'encryption:cipher'
+        attribute :encryption_cipher, :aliases => "encryption:cipher"
 
         def save
           attributes = {}
@@ -33,7 +33,7 @@ module Fog
         end
 
         def ready?
-          status.upcase == 'ACTIVE'
+          status.upcase == "ACTIVE"
         end
 
         def destroy
