@@ -1,3 +1,7 @@
+# ARCHIVED
+
+We have archived this repository as to the best of our knowledge this service is no longer in operation.
+
 # Fog::Serverlove
 
 ![Gem Version](https://badge.fury.io/rb/fog-serverlove.svg) [![Build Status](https://travis-ci.org/fog/fog-serverlove.svg?branch=master)](https://travis-ci.org/fog/fog-serverlove) [![Dependency Status](https://gemnasium.com/fog/fog-serverlove.svg)](https://gemnasium.com/fog/fog-serverlove) [![Coverage Status](https://img.shields.io/coveralls/fog/fog-serverlove.svg)](https://coveralls.io/r/fog/fog-serverlove?branch=master) [![Code Climate](https://codeclimate.com/github/fog/fog-serverlove/badges/gpa.svg)](https://codeclimate.com/github/fog/fog-serverlove)
